@@ -2,33 +2,35 @@
 <!-- Main wrapper - style you can find in pages.scss -->
 <!-- ============================================================== -->
 <div id="main-wrapper">
-    <app-header></app-header>
-  
-    <app-sidebar></app-sidebar>
-  
-    <div class="page-wrapper">
-      <div class="container-fluid">
-        <app-breadcrums></app-breadcrums>
-      </div>
-    <!--Rutas-->
-    <!-- ============================================================== -->
-    <!-- Start Page Content -->
-    <!-- ============================================================== -->
-    
-    <div class="row">
-      <div class="col-12">
-        <div class="card">
-          <div class="card-body">
-            <router-outlet></router-outlet>
+  <app-header></app-header>
+
+  <app-sidebar></app-sidebar>
+
+  <div class="page-wrapper">
+    <div class="container-fluid">
+      <app-breadcrums></app-breadcrums>
+      <router-outlet></router-outlet>
+
+
+      <!--Rutas-->
+      <!-- ============================================================== -->
+      <!-- Start Page Content -->
+      <!-- ============================================================== -->
+
+      <!-- <div class="row">
+        <div class="col-12">
+          <div class="card">
+            <div class="card-body">
+
+            </div>
           </div>
         </div>
-      </div>
+      </div> -->
+      <!-- ============================================================== -->
+      <!-- End PAge Content -->
+      <!-- ============================================================== -->
+
     </div>
-    <!-- ============================================================== -->
-    <!-- End PAge Content -->
-    <!-- ============================================================== -->
-  
-  </div>
     <!-- ============================================================== -->
     <!-- footer -->
     <!-- ============================================================== -->
@@ -38,6 +40,12 @@
     <!-- ============================================================== -->
     <!-- End footer -->
     <!-- ============================================================== -->
-  
-  
+
+
   </div>
+
+
+  <!-- <h4 class="card-title">Striped Progress bar </h4>            
+          <div class="progress m-t-20">
+            <div class="progress-bar bg-primary progress-bar-striped active" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%; height:10px;" role="progressbar"> <span class="sr-only">85% Complete (success)</span> </div>
+        </div> -->
